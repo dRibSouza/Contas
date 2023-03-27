@@ -1,0 +1,35 @@
+Exercício - 
+seguir padrão snake_case
+
+3 classes (Conta, ContaCorrente, ContaPoupanca)
+Classe separadas em cada arquivo.
+
+
+classe Conta
+    vai ter como atributos id_conta, saldo
+
+    criar Getters and setters  dos atributos
+    métodos = depositar e sacar 
+    conta vai ser abstract 
+    métodos depositar e sacar vai ser abstract : pass
+
+classe ContaCorrente 
+
+        Vai ter limite ( tipo cheque especial) (atributo)
+
+    biblioteca interna chamada abc ( from abc import astractmethod)
+    método abstrato tem somente pass, não faz nada.
+
+    na função de sacar da conta corrente = 
+    o valor disponível para saque é o limite + saldo
+
+    se o valor que for ser retirado for maior que o limite total, terá que ser informado um erro ( try: except:) -> value error 
+    colocar um caso como exemplo
+
+classe ContaPoupanca 
+    terá uma taxa de rendimento
+    terá também as funções de depositar e sacar 
+    uma função que calcule rendimento dado determinado tempo. 
+        esse tempo pode ser qualquer medida de tempo. 
+        cálculo de rendimento será referente ao Ano. 
+
