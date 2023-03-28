@@ -11,14 +11,14 @@ classe Conta
     criar Getters and setters  dos atributos
     métodos = depositar e sacar 
     conta vai ser abstract 
+    biblioteca interna chamada abc ( from abc import astractmethod)
+    método abstrato tem somente pass, não faz nada.
+
     métodos depositar e sacar vai ser abstract : pass
 
 classe ContaCorrente 
 
         Vai ter limite ( tipo cheque especial) (atributo)
-
-    biblioteca interna chamada abc ( from abc import astractmethod)
-    método abstrato tem somente pass, não faz nada.
 
     na função de sacar da conta corrente = 
     o valor disponível para saque é o limite + saldo
