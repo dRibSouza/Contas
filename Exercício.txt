@@ -32,4 +32,10 @@ classe ContaPoupanca
     uma função que calcule rendimento dado determinado tempo. 
         esse tempo pode ser qualquer medida de tempo. 
         cálculo de rendimento será referente ao Ano. 
+        Fórmula p/ juros compostos:
+            M = C * (1 + i)^t. Sendo que:
+                M corresponde ao valor final;
+                C é o valor aplicado inicialmente;
+                i é a taxa de juros, ou seja, a rentabilidade; (em um determinado período de tempo, )
+                t é o tempo de aplicação. (referente ao tempo escolhido na taxa de juros, então se a taxa é ao mês elevamos pela quantidade de meses, se for por segundo, elevamos pela quantidade de segundos)
 

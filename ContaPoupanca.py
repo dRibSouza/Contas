@@ -1,4 +1,5 @@
 from Conta import Conta
+from tempo import ajustar_tempo
 
 
 class ContaPoupanca(Conta):
@@ -6,8 +7,27 @@ class ContaPoupanca(Conta):
         super().__init__(id_conta, saldo)
         self.taxa_de_rendimento_ao_ano = taxa_de_rendimento_ao_ano
 
-    def sacar(self):
-        return super().sacar()
+    def sacar(self, valor_a_ser_sacado: float):
+        if valor_a_ser_sacado > self.get_saldo():
+            raise ValueError(
+                "O valor a ser sacadado é maior que o disponível.")
+        else:
+            self.set_saldo(self.get_saldo() - valor_a_ser_sacado)
 
-    def depositar(self):
-        return super().depositar()
+    def depositar(self, valor_a_ser_depositado):
+        self.set_saldo(self.get_saldo() + valor_a_ser_depositado)
+
+    def calcular_rendimento(self, tempo: float, unidade_tempo: str):
+
+        rendimento = self.get_saldo() * (1 + self.taxa_de_rendimento_ao_ano /
+                                         100) ** ajustar_tempo(tempo=tempo, unidade_tempo=unidade_tempo)
+
+        print(
+            f"O rendimento de sua conta no prazo de {tempo} {unidade_tempo} é de: R${(rendimento - self.get_saldo())}")
+
+
+minhaContaPoupanca = ContaPoupanca(1, 1000, 8.3)
+minhaContaPoupanca.sacar(150)
+
+minhaContaPoupanca.calcular_rendimento(1.5, "anos")
+minhaContaPoupanca.calcular_rendimento(18, "meses")
