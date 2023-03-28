@@ -1,7 +1,8 @@
 from abc import ABC, abstractmethod
+from IntefaceConta import InterfaceConta
 
 
-class Conta(ABC):
+class Conta(InterfaceConta, ABC):
     def __init__(self, id_conta: int, saldo: float):
         self._id_conta = id_conta
         self._saldo = saldo

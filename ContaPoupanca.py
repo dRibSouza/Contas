@@ -17,10 +17,10 @@ class ContaPoupanca(Conta):
     def depositar(self, valor_a_ser_depositado):
         self.set_saldo(self.get_saldo() + valor_a_ser_depositado)
 
-    def calcular_rendimento(self, tempo: float, unidade_tempo: str):
+    def calcular_rendimento(self, tempo_de_verificacao_do_rendimento: float, unidade_tempo: str):
 
         rendimento = self.get_saldo() * (1 + self.taxa_de_rendimento_ao_ano /
-                                         100) ** ajustar_tempo(tempo=tempo, unidade_tempo=unidade_tempo)
+                                         100) ** ajustar_tempo(tempo=tempo_de_verificacao_do_rendimento, unidade_tempo=unidade_tempo)
 
         print(
-            f"O rendimento de sua conta no prazo de {tempo} {unidade_tempo} é de: R${(rendimento - self.get_saldo())}")
+            f"O rendimento de sua conta no prazo de {tempo_de_verificacao_do_rendimento} {unidade_tempo} é de: R${(rendimento - self.get_saldo())}")

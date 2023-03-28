@@ -1,3 +1,5 @@
+# Para o cáculo do rendimento o período de tempo utilizado na fórmula, precisa ser o mesmo referente ao tempo passado.
+# Essa função realiza a conversão da unidade de tempo, podendo ser alterada sem comprometer a classe pai ContaPoupança
 
 def ajustar_tempo(tempo, unidade_tempo: str):
     # Define as constantes de conversão para cada unidade de tempo

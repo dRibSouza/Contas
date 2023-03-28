@@ -9,12 +9,12 @@ minha_conta_corrente.sacar(valor_a_ser_sacado=120)
 
 print("Saldo: ", minha_conta_corrente.get_saldo())
 
-print("Limite disponível: ", minha_conta_corrente.limite_disponível)
+print("Limite disponível: ", minha_conta_corrente.limite_disponivel)
 
 minha_conta_corrente.depositar(15)
 
 print("Saldo: ", minha_conta_corrente.get_saldo())
-print("Limite disponível: ", minha_conta_corrente.limite_disponível)
+print("Limite disponível: ", minha_conta_corrente.limite_disponivel)
 
 # TESTES PARA CONTA POUPANÇA
 
