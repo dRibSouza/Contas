@@ -23,7 +23,7 @@ classe ContaCorrente
     na função de sacar da conta corrente = 
     o valor disponível para saque é o limite + saldo
 
-    se o valor que for ser retirado for maior que o limite total, terá que ser informado um erro ( try: except:) -> value error 
+    se o valor que for ser retirado for maior que o limite total, terá que ser informado um erro -> value error 
     colocar um caso como exemplo
 
 classe ContaPoupanca 
