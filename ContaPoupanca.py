@@ -24,10 +24,3 @@ class ContaPoupanca(Conta):
 
         print(
             f"O rendimento de sua conta no prazo de {tempo} {unidade_tempo} é de: R${(rendimento - self.get_saldo())}")
-
-
-minhaContaPoupanca = ContaPoupanca(1, 1000, 8.3)
-minhaContaPoupanca.sacar(150)
-
-minhaContaPoupanca.calcular_rendimento(1.5, "anos")
-minhaContaPoupanca.calcular_rendimento(18, "meses")
